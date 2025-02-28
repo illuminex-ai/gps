@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "illuminex_ai_gps"
+version = "1.0.0"
+authors = [ { name="Illuminex AI", email="dconnolly@illuminex.ai" }]
+description = "GPSD Adapter"
+requires-python = ">=3.8.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
