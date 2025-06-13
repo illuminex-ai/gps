@@ -26,6 +26,7 @@ import os            # for file handling in gps_io
 import socket        # for socket.error
 import stat          # for stat.S_ISBLK()
 import sys           # to get script name for nice error/warning messages
+# from typing import
 
 from .misc import monotonic, polybytes
 from .client import *
@@ -48,7 +49,7 @@ VERB_RAW = 4     # raw info
 VERB_PROG = 5    # program trace
 
 
-def isfinite(f):
+def isfinite(f: int | float) -> bool:
     """Check if f is finite."""
     # Python 2 does not think +Inf or -Inf are NaN
     # Python 2 has no easier way to test for Inf
